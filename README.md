@@ -1,6 +1,6 @@
 # Fluidic Switch
 
-[![Travis build status](http://img.shields.io/travis/fluidicagency/switch.svg?style=flat)](https://travis-ci.org/Fluidic/fluidic-switch)
+[![Travis build status](http://img.shields.io/travis/fluidicagency/switch.svg?style=flat)](https://travis-ci.org/fluidicagency/switch)
 [![Code Climate](https://codeclimate.com/github/fluidicagency/switch/badges/gpa.svg)](https://codeclimate.com/github/fluidicagency/switch)
 [![Test Coverage](https://codeclimate.com/github/fluidicagency/switch/badges/coverage.svg)](https://codeclimate.com/github/fluidicagency/switch)
 [![Dependency Status](https://david-dm.org/fluidicagency/switch.svg)](https://david-dm.org/fluidicagency/switch)
