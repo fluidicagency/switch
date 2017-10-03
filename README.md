@@ -1,10 +1,10 @@
 # Fluidic Switch
 
 [![Travis build status](http://img.shields.io/travis/fluidicagency/switch.svg?style=flat)](https://travis-ci.org/Fluidic/fluidic-switch)
-[![Code Climate](https://codeclimate.com/github/fluidicagency/switch/badges/gpa.svg)](https://codeclimate.com/github/fluidicagency/fluidic-switch)
-[![Test Coverage](https://codeclimate.com/github/fluidicagency/switch/badges/coverage.svg)](https://codeclimate.com/github/fluidicagency/fluidic-switch)
-[![Dependency Status](https://david-dm.org/fluidicagency/switch.svg)](https://david-dm.org/Fluidic/fluidic-switch)
-[![devDependency Status](https://david-dm.org/fluidicagency/switch/dev-status.svg)](https://david-dm.org/Fluidic/fluidic-switch#info=devDependencies)
+[![Code Climate](https://codeclimate.com/github/fluidicagency/switch/badges/gpa.svg)](https://codeclimate.com/github/fluidicagency/switch)
+[![Test Coverage](https://codeclimate.com/github/fluidicagency/switch/badges/coverage.svg)](https://codeclimate.com/github/fluidicagency/switch)
+[![Dependency Status](https://david-dm.org/fluidicagency/switch.svg)](https://david-dm.org/fluidicagency/switch)
+[![devDependency Status](https://david-dm.org/fluidicagency/switch/dev-status.svg)](https://david-dm.org/fluidicagency/switch#info=devDependencies)
 
 ## Background
 Welcome to the Switch project from [Fluidic](https://fluidic.agency). Use this module to dynamically replate text of html pages using query strings in our own projects.
