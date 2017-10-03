@@ -1,4 +1,4 @@
-import fluidicSwitch from '../../src/fluidic-switch';
+import fluidicSwitch from '../../src/switch';
 
 describe('fluidicSwitch', () => {
   describe('Init function', () => {
