@@ -73,7 +73,7 @@ By now you can probably guess, a query string such as index.html?audience=profes
 
 ### Options
 
-Currently there is only one option, passed in to init, which is the default audience. E.g., in keeping with the examples above the following would set the default audience as professional (without having to define it in the query parameters:
+Currently there is only one option, passed in to init, which is the default audience. E.g., in keeping with the examples above the following would set the default audience as professional (without having to define it in the query parameters):
 
 ~~~~
 fluidicSwitch.init('professional');
