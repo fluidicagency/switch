@@ -7,15 +7,15 @@
 [![devDependency Status](https://david-dm.org/fluidicagency/switch/dev-status.svg)](https://david-dm.org/fluidicagency/switch#info=devDependencies)
 
 ## Background
-Welcome to the Switch project from [Fluidic](https://fluidic.agency). Use this module to dynamically replace, show and switch text of html pages and form values using query strings. Boom Shakalaka!
+Welcome to the Switch project from [Fluidic](https://fluidic.agency). Use this module to dynamically replace, show and switch text of html pages and form values using query strings. **Boom Shakalaka!**
 
-After finding no good solutions, except those offered by page builder SAAS platforms (that were too basic for our requirements) we built this tool in-house. At the agency we use it to develop highly targeted landing pages that relate well to EDM or PPC ads, allowing us to provide specific, niche copy to our users.
+After finding no good solutions, except those offered by page builder SAAS platforms (that were too basic for our requirements) we built this tool in-house. At the agency we use it to develop landing pages that relate specifically to EDM or PPC ad segments, allowing us to deliver niche copy that precisely matches our client&rsquo;s taget audience.
 
-But do with it what you will and give us a shout on Twitter [@fluidicagency](https://twitter.com/fluidicagency), or throw some stars like a ninja &ndash; we'd love to know what you have created!
+But that&rsquo;s us&hellip; do with it what you will and give us a shout on Twitter [@fluidicagency](https://twitter.com/fluidicagency), or throw some stars like a ninja &ndash; we&rsquo;d love to know what you have created!
 
 ## Installation
 
-You'll need all the usual tools and goodies&hellip; hang on &ndash; actually you don't! There are zero dependencies, no jQuery, no nothing! Woop!!
+You&rsquo;ll need all the usual tools and goodies&hellip; hang on &ndash; actually you don&rsquo;t! There are zero dependencies, no jQuery, no nothing! Woop!!
 
 Simply download fluidic-switch.min.js from the dist folder and move in to your project, then add to your code:
 
@@ -35,7 +35,7 @@ then
 fluidicSwitch.init();
 ~~~~
 
-Of course you'll need to ensure the path matches the location that you placed the js file.
+Of course you&rsquo;ll need to ensure the path matches the location that you placed the js file.
 
 ## Usage
 
