@@ -17,7 +17,7 @@ But that&rsquo;s us&hellip; do with it what you will and give us a shout on Twit
 
 You&rsquo;ll need all the usual tools and goodies&hellip; hang on &ndash; actually you don&rsquo;t! There are zero dependencies, no jQuery, no nothing! Woop!!
 
-Simply download fluidic-switch.min.js from the dist folder and move in to your project, then add to your code:
+Simply download switch.min.js from the dist folder and move in to your project, then add to your code:
 
 ~~~~
 const fluidicSwitch = require('./switch.js');
@@ -29,13 +29,15 @@ or
 import fluidicSwitch from './switch.js';
 ~~~~
 
-then
+Once that is one you can kick things off with:
 
 ~~~~
 fluidicSwitch.init();
 ~~~~
 
 Of course you&rsquo;ll need to ensure the path matches the location that you placed the js file.
+
+You should also include switch.css in your project.
 
 ## Usage
 
@@ -47,7 +49,7 @@ Use the class switch-content and attribute data-switch-key to specify the query 
 
 ~~~~
 <p class="switch-content" data-switch-key="company">Small Inc.</p>
-~~~~  
+~~~~
 
 Appending the query string index.html?company=Biggus%20Incorporated will replace the contents of the p tag with Biggus Incorporated. Sweet.
 
@@ -61,15 +63,19 @@ Useful for more sweeping and general changes based on an audience or grouping. S
 
 In this example the text in the data attribute replaces that of the html element when the following query string is employed: index.html?audience=consumer
 
-### Switch Toggle
+### Switch Show/Hide
 
 Use this option if you have larger portions of text or html that you want to show or hide based on a audience or group.
 
 ~~~~
-<p class="switch-toggle" data-audience-show="professional">Take a vacation, you deserve it.</p>
+<p class="switch-show" data-audience-audience="professional">Take a vacation, you deserve it.</p>
 ~~~~
 
 By now you can probably guess, a query string such as index.html?audience=professional will show the p element, otherwise it's hidden by default.
+
+Applying the switch-hide class works in the same way.
+
+Note that all elements with the switch-show and switch-hide class applied are initially hidden (via switch.css) and the code logic then decides whether to make the element visible based on the audience settings. This may seem unintuitive, but it actually avoids any temporary visibility of elements that should be hidden whilst the plugin loads.
 
 ### Options
 

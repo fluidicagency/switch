@@ -6,7 +6,7 @@ const fluidicSwitch = {
 	  var dynamicKey;
 	  var urlParameter;
 	  var formId;
-	  
+
 	  // Parse the URL parameter
 	  function getParameterByName(name, url) {
 	    if (!url) url = window.location.href;
@@ -29,7 +29,7 @@ const fluidicSwitch = {
 	    if (dynamicContent) switchContent[i].textContent = dynamicContent;
 	  }
 
-	  
+
 	  // Update audience from query sting parameter
 	  var audience = getParameterByName('audience');
 
@@ -42,12 +42,19 @@ const fluidicSwitch = {
 	    if(audience !== defaultAudience) switchAudience[i].textContent = switchAudience[i].getAttribute('data-audience-' + audience);
 	  }
 
-	  // Hide switch-toggle elements and show based on matching data-audience-show settings to url parameter
-	  var switchToggle = document.getElementsByClassName("switch-toggle");
-	  for(var i = 0; i < switchToggle.length; i++){
-	    switchToggle[i].style.display = "none"
-	    if(switchToggle[i].getAttribute('data-audience-show') === audience) switchToggle[i].style.display = "block";
-	  }
+    // Show elements based on audience from url parameter
+    var switchShow = document.getElementsByClassName('switch-show');
+    for(var i = 0; i < switchShow.length; i++){
+      switchShow[i].style.display = 'none';
+      if(switchShow[i].getAttribute('data-switch-audience') === audience) switchShow[i].style.display = 'block';
+    }
+
+    // Hide elements based on audience from url parameter
+    var switchHide = document.getElementsByClassName('switch-hide');
+    for(var i = 0; i < switchHide.length; i++){
+      switchHide[i].style.display = 'none'; // Hidden by default to avoid flicker
+      if(switchHide[i].getAttribute('data-switch-audience') !== audience) switchHide[i].style.display = 'block';
+    }
 
 	  // Populate form fields
 	  var formInputs = document.getElementsByTagName('input');
@@ -59,7 +66,7 @@ const fluidicSwitch = {
 	    if (formId) urlParameter = getParameterByName(formId);
 	    if (urlParameter) document.getElementById(formId).value = urlParameter;
 	  }
-	  
+
 	}
 
 };
