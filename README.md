@@ -7,7 +7,7 @@
 [![devDependency Status](https://david-dm.org/fluidicagency/switch/dev-status.svg)](https://david-dm.org/fluidicagency/switch#info=devDependencies)
 
 ## Background
-Welcome to the Switch project from fluidic &mdash; we are a top shelf [scientific &amp; medical marketing agency](https://fluidic.agency). Use this module to dynamically replace, show and switch text on html pages and form values using query strings. **Boom Shakalaka!**
+Welcome to the Switch project from [fluidic](https://fluidic.agency). Use this module to dynamically replace, show and switch text on html pages and change form values using URL location query strings. **Boom Shakalaka!**
 
 We wanted to bring the functionality of dynamic content replacement which is available on page builder SAAS platforms like Unbounce to our own projects. After finding no good solutions out there we built this tool in-house. At the agency we use it to develop landing pages that relate specifically to EDM or PPC ad segments, allowing us to deliver niche copy that precisely matches our client&rsquo;s taget audience.
 
