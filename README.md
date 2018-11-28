@@ -7,7 +7,7 @@
 [![devDependency Status](https://david-dm.org/fluidicagency/switch/dev-status.svg)](https://david-dm.org/fluidicagency/switch#info=devDependencies)
 
 ## Background
-Welcome to the Switch project from [fluidic](https://fluidic.agency). Use this module to dynamically replace, show and switch text on html pages and change form values using URL location query strings. **Boom Shakalaka!**
+Welcome to the Switch project from [fluidic](https://fluidic.agency) which provides easy dynamic text insertion functionality to any webpage. Use this module to dynamically replace, show and switch text on html pages and change form values using URL location query strings. **Boom Shakalaka!**
 
 We wanted to bring the functionality of dynamic content replacement which is available on page builder SAAS platforms like Unbounce to our own projects. After finding no good solutions out there we built this tool in-house. At the agency we use it to develop landing pages that relate specifically to EDM or PPC ad segments, allowing us to deliver niche copy that precisely matches our client&rsquo;s taget audience.
 
@@ -71,11 +71,15 @@ Use this option if you have larger portions of text or html that you want to sho
 <p class="switch-show" data-audience-audience="professional">Take a vacation, you deserve it.</p>
 ~~~~
 
-By now you can probably guess, a query string such as index.html?audience=professional will show the p element, otherwise it's hidden by default.
+By now you can probably guess; a query string such as index.html?audience=professional will show the p element, otherwise it's hidden by default.
 
-Applying the switch-hide class works in the same way.
+Applying the switch-hide class works in the same way, albeit in reverse.
 
 Note that all elements with the switch-show and switch-hide class applied are initially hidden (via switch.css) and the code logic then decides whether to make the element visible based on the audience settings. This may seem unintuitive, but it actually avoids any temporary visibility of elements that should be hidden whilst the plugin loads.
+
+### Form Fields
+
+Quite simply, any query parameter with a name that matches the id of a form field will automaticlly be inserted into that field. This is super handy to make long forms faster for users to complete when they are arriving from a known destination (email for exmaple), where you can embed known data into the incoming link.
 
 ### Options
 
@@ -84,6 +88,21 @@ Currently there is only one option, passed in to init, which is the default audi
 ~~~~
 fluidicSwitch.init('professional');
 ~~~~
+
+## Development
+
+Switch has been build using the [generator-babel-boilerplate](https://github.com/babel/generator-babel-boilerplate) which exposes the following npm scripts for use in development.
+
+### npm Scripts
+
+- `npm test` - Lint the library and tests, then run the unit tests
+- `npm run lint` - Lint the source and unit tests
+- `npm run watch` - Continuously run the unit tests as you make changes to the source
+   and test files themselves
+- `npm run test-browser` - Build the library for use with the browser spec runner.
+  Changes to the source will cause the runner to automatically refresh.
+- `npm run build` - Lint then build the library
+- `npm run coverage` - Generate a coverage report
 
 ## Credits, Kudos &amp; Props
 * The Usual Suspects &ndash; Google, Stack Overflow *et. al.*
