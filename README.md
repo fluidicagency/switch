@@ -68,7 +68,7 @@ In this example the text in the data attribute replaces that of the html element
 Use this option if you have larger portions of text or html that you want to show or hide based on a audience or group.
 
 ~~~~
-<p class="switch-show" data-audience-audience="professional">Take a vacation, you deserve it.</p>
+<p class="switch-show" data-audience="professional">Take a vacation, you deserve it.</p>
 ~~~~
 
 By now you can probably guess, a query string such as `index.html?audience=professional` will show the p element, otherwise it's hidden by default.

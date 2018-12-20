@@ -48,14 +48,14 @@ const fluidicSwitch = {
     var switchShow = document.getElementsByClassName('switch-show');
     for(var i = 0; i < switchShow.length; i++){
       switchShow[i].style.display = 'none';
-      if(switchShow[i].getAttribute('data-switch-audience') === audience) switchShow[i].style.display = 'block';
+      if(switchShow[i].getAttribute('data-audience') === audience) switchShow[i].style.display = 'block';
     }
 
     // Hide elements based on audience from url parameter
     var switchHide = document.getElementsByClassName('switch-hide');
     for(var i = 0; i < switchHide.length; i++){
       switchHide[i].style.display = 'none'; // Hidden by default to avoid flicker
-      if(switchHide[i].getAttribute('data-switch-audience') !== audience) switchHide[i].style.display = 'block';
+      if(switchHide[i].getAttribute('data-audience') !== audience) switchHide[i].style.display = 'block';
     }
 
 	  // Populate form fields
